@@ -1,26 +1,15 @@
-// class GroceryItem {
-//   final String id;
-//   final String name;
-//   final int quantity;
-//   final String category;
-
-//   const GroceryItem({
-//     required this.id,
-//     required this.name,
-//     required this.quantity,
-//     required this.category,
-//   });
-// }
-import 'package:flutter/material.dart';
+import 'package:shopping_list/models/category.dart';
 
 class GroceryItem {
-  final String label;
-  final Color color;
+  final String id;
+  final String name;
   final int quantity;
+  final Category category;
 
   const GroceryItem({
-    required this.label,
-    required this.color,
+    required this.id,
+    required this.name,
     required this.quantity,
+    required this.category,
   });
 }

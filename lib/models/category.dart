@@ -1,7 +1,21 @@
-class Category {
-  final String id;
-  final String name;
-  final String color;
+import 'package:flutter/material.dart';
 
-  const Category(this.id, this.name, this.color);
+enum Categories {
+  vegetables,
+  fruit,
+  meat,
+  dairy,
+  carbs,
+  sweets,
+  spices,
+  convenience,
+  hygiene,
+  other,
+}
+
+class Category {
+  const Category(this.title, this.color);
+
+  final String title;
+  final Color color;
 }
